@@ -1,0 +1,196 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Fraunces:wght@500;700&family=Inter:wght@400;700&family=Montserrat:wght@500;700&display=swap');
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Fraunces:wght@500;700&family=Inter:wght@400;700&family=Montserrat:wght@500;700&display=swap');
+
+
+  /*
+    font-family: 'Fraunces', serif; 
+    font-family: 'Montserrat', sans-serif;
+  */
+
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+  }
+
+  body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .container{
+    margin: 30px auto;
+    padding: 0px 30px; 
+
+  }
+
+  .grid{
+    max-width: 700px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+.img img{
+    max-width: 100%;
+    display: inherit;
+
+}
+
+.card-container{
+
+    padding: 35px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto__logo{
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size:13px;
+    color: hsl(228, 12%, 48%);
+    font-weight:500px ;
+}
+
+.produto__nome{
+
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+
+
+}
+
+.produto__descricao{
+
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em; /* Espalamento entre as linhas */
+    
+}
+
+.preco{
+
+    display: flex;
+   align-items: center;
+}
+
+.novo__preco{
+
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 25px;
+    padding-right: 25px;
+}
+
+.velho__preco{
+    color: hsl(228, 12%, 48%);   
+    text-decoration: line-through;
+
+}
+
+.botao{
+    border: none;
+
+    background-color: hsl(158, 36%, 37%);
+    padding: 12px 0;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700px;
+    transition: background-color .3s ease;
+
+    
+    width: 100%;
+
+}
+
+button.botao:hover{
+  background-color: hsl(158, 36%, 21%);
+
+}
+
+button botao img{
+
+    font-size: 7px;
+
+}
+
+@media only screen and (max-width: 628px){
+  .grid{
+    grid-template-columns: 1fr;
+
+  }
+  .img img{
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card-container{
+    display: block;
+
+  }
+
+  h6.produto__logo, h2.produto__nome, p.produto__descricao, .preco{
+    padding-bottom: 23px;
+
+  }
+
+}
+
+@media only screen and (max-width: 375px){
+  .container{
+    margin:15px auto;
+    padding: 0 15px;
+
+  }
+.img img{
+
+  max-height: 290px
+}
+.card-container{
+  padding: 24px;
+
+}
+
+h6.produto__logo, h2.produto__nome, p.produto__descricao, .preco{
+  padding-bottom: 16px;
+
+}
+
+  h2.produto__nome{
+
+    font-size: 28px;
+
+  }
+  p.produto__descricao{
+    font-size: 12px;
+  }
+
+  p.novo__preco{
+    font-size: 23px;
+
+  }
+  button.botao{
+    padding: 12px 0;
+    font-size: 13px;
+  }
+  
+}
